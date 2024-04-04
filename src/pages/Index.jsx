@@ -45,9 +45,9 @@ const Index = () => {
 
   return (
     <Center h="100vh" flexDirection="column">
-      <Grid templateColumns="repeat(3, 1fr)" gap={2} w="300px" h="300px" bg="gray.100" p={4} borderRadius="md" boxShadow="md">
+      <Grid templateColumns="repeat(3, 1fr)" gap={2} w="240px" h="240px" bg="gray.100" p={4} borderRadius="md" boxShadow="md">
         {board.map((cell, index) => (
-          <GridItem key={index} onClick={() => handleClick(index)} w="100%" h="100%" bg="white" borderRadius="md" display="flex" alignItems="center" justifyContent="center" fontSize="4xl" fontWeight="bold" cursor="pointer" boxShadow="md" transition="all 0.2s" _hover={{ boxShadow: "lg" }}>
+          <GridItem key={index} onClick={() => handleClick(index)} w="80px" h="80px" bg="white" borderRadius="md" display="flex" alignItems="center" justifyContent="center" fontSize="4xl" fontWeight="bold" cursor="pointer" boxShadow="md" transition="all 0.2s" _hover={{ boxShadow: "lg" }}>
             {cell}
           </GridItem>
         ))}
